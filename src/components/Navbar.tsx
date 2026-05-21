@@ -113,7 +113,6 @@ const Navbar = () => {
 
   const mobileMenuRef = useRef<HTMLDivElement>(null);
   const mobileMenuButtonRef = useRef<HTMLButtonElement>(null);
-  const loginButtonRef = useRef<HTMLAnchorElement>(null);
   const searchContainerRef = useRef<HTMLDivElement>(null);
   const searchInputRef = useRef<HTMLInputElement>(null);
 
@@ -378,15 +377,21 @@ const Navbar = () => {
               </button>
             </div>
 
-            {/* Login button (no shortcut) */}
-            <div className="relative">
+            {/* Login & Register buttons (replaced user icon) */}
+            <div className="flex items-center gap-2">
               <Link
-                ref={loginButtonRef}
                 href="/auth/login"
-                className="flex items-center justify-center rounded-full p-1 transition-colors hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2"
+                className="rounded-md px-3 py-1.5 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2"
                 aria-label="Login"
               >
-                <LuCircleUserRound size={28} className="text-gray-900" />
+                Login
+              </Link>
+              <Link
+                href="/auth/register"
+                className="rounded-md px-3 py-1.5 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2"
+                aria-label="Register"
+              >
+                Register
               </Link>
             </div>
           </div>
@@ -466,7 +471,7 @@ const Navbar = () => {
         )}
       </AnimatePresence>
 
-      {/* Shortcut hint notification (updated) */}
+      {/* Shortcut hint notification */}
       <AnimatePresence>
         {showShortcutHint && (
           <motion.div
