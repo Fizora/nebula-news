@@ -166,7 +166,7 @@ export default function Trending() {
       <Navbar />
 
       {/* Hero section */}
-      <section className="py-16 sm:py-20 lg:py-24">
+      <section className="py-18 sm:py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-4">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <div className="max-w-2xl space-y-2">

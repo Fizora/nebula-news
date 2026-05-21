@@ -124,7 +124,7 @@ export default function AboutUs() {
   return (
     <main className="bg-white text-gray-950">
       {/* Hero – unchanged, but kept for consistency */}
-      <section className="py-16 sm:py-20 lg:py-24">
+      <section className="py-18 sm:py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-4">
           <div className="grid gap-12 lg:grid-cols-12 lg:items-center">
             <div className="space-y-8 lg:col-span-7">

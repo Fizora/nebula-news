@@ -427,7 +427,7 @@ export default function NewsPage() {
 
   return (
     <main className="bg-white text-gray-950">
-      <section className="py-20 sm:py-24 lg:py-28">
+      <section className="py-18 sm:py-24 lg:py-28">
         <div className="mx-auto max-w-7xl px-4">
           <div className="mb-8 flex flex-col gap-3 sm:mb-10 sm:flex-row sm:items-end sm:justify-between">
             <div className="space-y-2">

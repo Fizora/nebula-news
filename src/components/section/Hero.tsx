@@ -62,7 +62,7 @@ const Hero = () => {
             </div>
 
             {/* Trust indicators – improved stats */}
-            <div className="grid max-w-xl grid-cols-3 gap-4 pt-2">
+            <div className="grid max-w-xl grid-cols-1 md:grid-cols-3 gap-4 pt-2">
               <div className="rounded-2xl border border-gray-200 bg-white p-4 shadow-sm transition-all hover:shadow-md">
                 <div className="flex items-center gap-2">
                   <LuZap className="h-5 w-5 text-red-500" />
