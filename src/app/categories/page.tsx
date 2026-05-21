@@ -34,6 +34,7 @@ import {
   LucideGlobe2,
   LucideBarChart3,
 } from "lucide-react";
+import Footer from "@/components/Footer";
 
 // ========== FREE ACCESS CATEGORIES (general news) ==========
 const freeCategories = [
@@ -316,6 +317,7 @@ const trendingCategories = [
 export default function Categories() {
   return (
     <main className="bg-white text-gray-950">
+      <Navbar></Navbar>
       {/* Hero section */}
       <section className="py-18 sm:py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-4">
@@ -514,6 +516,7 @@ export default function Categories() {
           </p>
         </div>
       </section>
+      <Footer></Footer>
     </main>
   );
 }

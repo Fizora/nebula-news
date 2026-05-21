@@ -11,6 +11,7 @@ import {
   LuNewspaper,
 } from "react-icons/lu";
 import { LucideBarChart3 } from "lucide-react";
+import Footer from "@/components/Footer";
 
 // Trending stories data – 12 items, ranked by current engagement
 const trendingStories = [
@@ -345,6 +346,7 @@ export default function Trending() {
           engagement). Updated every 5 minutes. Source: Nebula News network.
         </div>
       </section>
+      <Footer></Footer>
     </main>
   );
 }

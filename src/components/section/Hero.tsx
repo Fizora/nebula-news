@@ -10,9 +10,9 @@ import {
 const Hero = () => {
   return (
     <section className="relative min-h-screen overflow-hidden bg-white">
-      {/* Background gradients – Tailwind v4 compatible */}
+      {/* Background linears – Tailwind v4 compatible */}
       <div className="absolute inset-0 -z-10 bg-linear-to-br from-white via-gray-50 to-gray-100/50" />
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_left,_rgba(239,68,68,0.06),_transparent_50%)]" />
+      <div className="absolute inset-0 -z-10 bg-[radial-linear(ellipse_at_top_left,_rgba(239,68,68,0.06),_transparent_50%)]" />
 
       <div className="mx-auto flex min-h-screen max-w-7xl items-center px-4 py-20 sm:py-24 lg:py-28">
         <div className="grid w-full gap-12 lg:grid-cols-12 lg:items-center">

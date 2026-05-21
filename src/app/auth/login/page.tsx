@@ -21,7 +21,6 @@ export default function Login() {
 
   return (
     <main className="bg-white text-gray-950">
-      <Navbar />
       <section className="min-h-screen py-24 sm:py-32">
         <div className="mx-auto max-w-md px-4">
           <div className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm sm:p-8">

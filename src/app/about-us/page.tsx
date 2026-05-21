@@ -22,6 +22,7 @@ import {
   LucideGlobe2,
   LucideBarChart3,
 } from "lucide-react";
+import Footer from "@/components/Footer";
 
 // Decision‑driven news stories – crafted for investors, analysts, economists
 const decisionNews = [
@@ -123,6 +124,7 @@ const terminalFeatures = [
 export default function AboutUs() {
   return (
     <main className="bg-white text-gray-950">
+      <Navbar></Navbar>
       {/* Hero – unchanged, but kept for consistency */}
       <section className="py-18 sm:py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-4">
@@ -270,7 +272,7 @@ export default function AboutUs() {
       </section>
 
       {/* NEW: Nebula Terminal Section – Bloomberg competitor, far superior & cheaper */}
-      <section className="bg-gradient-to-br from-gray-950 to-gray-900 py-16 text-white sm:py-20">
+      <section className="bg-linear-to-br from-gray-950 to-gray-900 py-16 text-white sm:py-20">
         <div className="mx-auto max-w-7xl px-4">
           <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
             <div>
@@ -574,7 +576,7 @@ export default function AboutUs() {
             </div>
 
             {/* Tier 4 – Ultimate $32,500/year (exact 500M IDR equivalent) */}
-            <div className="relative rounded-3xl border-2 border-red-200 bg-gradient-to-br from-white to-red-50/30 p-6 shadow-lg transition-all hover:-translate-y-1 hover:shadow-2xl">
+            <div className="relative rounded-3xl border-2 border-red-200 bg-linear-to-br from-white to-red-50/30 p-6 shadow-lg transition-all hover:-translate-y-1 hover:shadow-2xl">
               <div className="absolute -top-3 left-6 rounded-full bg-red-500 px-3 py-0.5 text-xs font-bold uppercase tracking-wide text-white shadow-md">
                 Ultimate
               </div>
@@ -649,6 +651,7 @@ export default function AboutUs() {
           </p>
         </div>
       </section>
+      <Footer></Footer>
     </main>
   );
 }

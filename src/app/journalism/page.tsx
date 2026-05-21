@@ -16,6 +16,7 @@ import {
   LuLock,
   LuBadgeCheck,
 } from "react-icons/lu";
+import Footer from "@/components/Footer";
 
 export default function Journalism() {
   return (
@@ -325,6 +326,7 @@ export default function Journalism() {
           Journalism Network (GIJN) and the International Press Institute (IPI).
         </div>
       </section>
+      <Footer></Footer>
     </main>
   );
 }

@@ -42,9 +42,7 @@ export default function RootLayout({
       className={`${fontSans.variable} ${fontMono.variable} ${fontTitle.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-white text-black font-mono">
-        <Navbar></Navbar>
         {children}
-        <Footer></Footer>
       </body>
     </html>
   );
