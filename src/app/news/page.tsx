@@ -427,10 +427,10 @@ export default function NewsPage() {
   };
 
   return (
-    <main className="bg-white text-gray-950">
+    <main className="overflow-x-hidden bg-white text-gray-950">
       <Navbar></Navbar>
       <section className="py-18 sm:py-24 lg:py-28">
-        <div className="mx-auto max-w-7xl px-4">
+        <div className="mx-auto w-full max-w-7xl px-4">
           <div className="mb-8 flex flex-col gap-3 sm:mb-10 sm:flex-row sm:items-end sm:justify-between">
             <div className="space-y-2">
               <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-gray-50 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-gray-500">
@@ -461,7 +461,7 @@ export default function NewsPage() {
                 {currentItems.map((item) => (
                   <article
                     key={item.title}
-                    className={`group rounded-3xl border border-gray-200 bg-white p-5 shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-gray-900/5 ${
+                    className={`group overflow-hidden rounded-3xl border border-gray-200 bg-white p-5 shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-gray-900/5 ${
                       item.featured ? "sm:col-span-2" : ""
                     }`}
                   >
@@ -477,7 +477,7 @@ export default function NewsPage() {
 
                     <div className="mt-4 space-y-3">
                       <h2
-                        className={`font-semibold tracking-tight text-gray-950 transition-colors group-hover:text-red-500 ${
+                        className={`wrap-break-words font-semibold tracking-tight text-gray-950 transition-colors group-hover:text-red-500 ${
                           item.featured
                             ? "text-2xl sm:text-3xl"
                             : "text-lg sm:text-xl"
@@ -485,7 +485,7 @@ export default function NewsPage() {
                       >
                         {item.title}
                       </h2>
-                      <p className="text-sm leading-6 text-gray-600 sm:text-base">
+                      <p className="wrap-break-words text-sm leading-6 text-gray-600 sm:text-base">
                         {item.excerpt}
                       </p>
                     </div>
@@ -520,7 +520,7 @@ export default function NewsPage() {
                   stories
                 </p>
 
-                <div className="flex items-center gap-2">
+                <div className="flex flex-wrap items-center justify-center gap-2">
                   <button
                     type="button"
                     onClick={() => goToPage(currentPage - 1)}
@@ -530,7 +530,7 @@ export default function NewsPage() {
                     Previous
                   </button>
 
-                  <div className="flex items-center gap-2">
+                  <div className="flex flex-wrap items-center justify-center gap-2">
                     {Array.from({ length: totalPages }).map((_, index) => {
                       const page = index + 1;
                       const active = page === currentPage;
@@ -584,7 +584,9 @@ export default function NewsPage() {
                       <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-red-50 text-sm font-semibold text-red-600">
                         {index + 1}
                       </div>
-                      <p className="text-sm leading-6 text-gray-700">{item}</p>
+                      <p className="wrap-break-words text-sm leading-6 text-gray-700">
+                        {item}
+                      </p>
                     </div>
                   ))}
                 </div>
